@@ -13,8 +13,6 @@ function App() {
       <div className="app_body">
         <Sidebar/>
       </div>
-      {/* App body */}
-        {/* Sidebar */}
         {/* Feed */}
         {/* Widget */}
     </div>
