@@ -8,6 +8,7 @@ import ChatBubbleOutlinedIcon from "@material-ui/icons/ChatBubbleOutlined";
 import NearMeIcon from "@material-ui/icons/NearMe";
 
 const Post = ({ profilePic, image, username, timestamp, message }) => {
+    
   return (
     <div className="post">
       <div className="post__top">
