@@ -6,12 +6,12 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import { useStateValue } from "./StateProvider";
 import db from "./firebase";
-import firebase from 'firebase';
+import firebase from "firebase";
 
 const MessageSender = () => {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const handleSubmit = (e) => {
     e.preventDefault();
     db.collection("posts").add({
